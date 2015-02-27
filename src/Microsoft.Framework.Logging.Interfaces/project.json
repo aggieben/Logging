@@ -1,27 +1,33 @@
 {
-    "version": "1.0.0-*",
-    "description": "Logging interface definitions.",
-    "frameworks": {
-        "net45": { },
-        "aspnet50": {
-            "dependencies": {
-                "Microsoft.Framework.Runtime.Interfaces": { "version": "1.0.0-*", "type": "build" }
-            }
-        },
-        "aspnetcore50": {
-            "dependencies": {
-                "Microsoft.Framework.Runtime.Interfaces": { "version": "1.0.0-*", "type": "build" },
-                "System.Runtime": "4.0.20-beta-*",
-                "System.Runtime.Extensions": "4.0.10-beta-*",
-                "System.Runtime.InteropServices": "4.0.20-beta-*"
-            }
-        },
-        ".NETPortable,Version=v4.6,Profile=Profile151": {
-            "frameworkAssemblies": {
-                "System.Globalization": "",
-                "System.Runtime": "",
-                "System.Runtime.InteropServices": ""
-            }
+  "version": "1.0.0-beta3",
+  "description": "Logging interface definitions.",
+  "frameworks": {
+    "net45": {},
+    "aspnet50": {
+      "dependencies": {
+        "Microsoft.Framework.Runtime.Interfaces": {
+          "version": "1.0.0-beta3",
+          "type": "build"
         }
+      }
+    },
+    "aspnetcore50": {
+      "dependencies": {
+        "Microsoft.Framework.Runtime.Interfaces": {
+          "version": "1.0.0-beta3",
+          "type": "build"
+        },
+        "System.Runtime": "4.0.20-beta-22605",
+        "System.Runtime.Extensions": "4.0.10-beta-22605",
+        "System.Runtime.InteropServices": "4.0.20-beta-22605"
+      }
+    },
+    ".NETPortable,Version=v4.6,Profile=Profile151": {
+      "frameworkAssemblies": {
+        "System.Globalization": "",
+        "System.Runtime": "",
+        "System.Runtime.InteropServices": ""
+      }
     }
+  }
 }

@@ -1,18 +1,18 @@
 {
-    "dependencies": {
-        "Microsoft.Framework.Logging.Console": "1.0.0-*",
-        "Microsoft.Framework.Logging.Serilog": "1.0.0-*",
-        "xunit.runner.kre": "1.0.0-*"
-    },
-    "commands": {
-        "run": "xunit.runner.kre",
-        "test": "xunit.runner.kre"
-    },
-    "frameworks": {
-        "aspnet50": { 
-            "dependencies": {
-                "Moq": "4.2.1312.1622"
-            }
-        }
+  "dependencies": {
+    "Microsoft.Framework.Logging.Console": "1.0.0-beta3",
+    "Microsoft.Framework.Logging.Serilog": "1.0.0-beta3",
+    "xunit.runner.kre": "1.0.0-beta3"
+  },
+  "commands": {
+    "run": "xunit.runner.kre",
+    "test": "xunit.runner.kre"
+  },
+  "frameworks": {
+    "aspnet50": {
+      "dependencies": {
+        "Moq": "4.2.1312.1622"
+      }
     }
+  }
 }

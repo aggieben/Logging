@@ -1,41 +1,49 @@
 {
-    "version": "1.0.0-*",
-    "description": "Logging infrastructure.",
-    "compilationOptions": {
-        "define": [ "TRACE" ]
+  "version": "1.0.0-beta3",
+  "description": "Logging infrastructure.",
+  "compilationOptions": {
+    "define": [
+      "TRACE"
+    ]
+  },
+  "frameworks": {
+    "net45": {
+      "dependencies": {
+        "Microsoft.Framework.Logging.Interfaces": "1.0.0-beta3"
+      }
     },
-    "frameworks": {
-        "net45": {
-            "dependencies": {
-                "Microsoft.Framework.Logging.Interfaces": "1.0.0-*"
-            }
-        },
-        "aspnet50": {
-            "dependencies": {
-                "Microsoft.Framework.Logging.Interfaces": { "version": "1.0.0-*", "type": "build" }
-            }
-        },
-        "aspnetcore50": {
-            "dependencies": {
-                "System.Collections.Concurrent": "4.0.10-beta-*",
-                "System.Diagnostics.TraceSource": "4.0.0-beta-*",
-                "System.Globalization": "4.0.10-beta-*",
-                "System.Linq": "4.0.0-beta-*",
-                "System.Threading": "4.0.10-beta-*",
-                "Microsoft.Framework.Logging.Interfaces": { "version": "1.0.0-*", "type": "build" }
-            }
-        },
-        ".NETPortable,Version=v4.6,Profile=Profile151": {
-            "dependencies": {
-                "Microsoft.Framework.Logging.Interfaces": "1.0.0-*"
-            },
-            "frameworkAssemblies": {
-                "System.Collections": "",
-                "System.Reflection":  "",
-                "System.Runtime.Extensions": "",
-                "System.Linq": "",
-                "System.Threading": ""
-            }
+    "aspnet50": {
+      "dependencies": {
+        "Microsoft.Framework.Logging.Interfaces": {
+          "version": "1.0.0-beta3",
+          "type": "build"
         }
+      }
+    },
+    "aspnetcore50": {
+      "dependencies": {
+        "System.Collections.Concurrent": "4.0.10-beta-22605",
+        "System.Diagnostics.TraceSource": "4.0.0-beta-22605",
+        "System.Globalization": "4.0.10-beta-22605",
+        "System.Linq": "4.0.0-beta-22605",
+        "System.Threading": "4.0.10-beta-22605",
+        "Microsoft.Framework.Logging.Interfaces": {
+          "version": "1.0.0-beta3",
+          "type": "build"
+        }
+      }
+    },
+    ".NETPortable,Version=v4.6,Profile=Profile151": {
+      "dependencies": {
+        "Microsoft.Framework.Logging.Interfaces": "1.0.0-*"
+      },
+      "frameworkAssemblies": {
+        "System.Collections": "",
+        "System.Reflection": "",
+        "System.Runtime.Extensions": "",
+        "System.Linq": "",
+        "System.Threading": ""
+      }
     }
+  }
 }
