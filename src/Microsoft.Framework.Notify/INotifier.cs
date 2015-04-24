@@ -61,7 +61,7 @@ namespace Microsoft.Framework.Notify
 
             foreach (var methodInfo in methodInfos)
             {
-                var notificationNameAttribute = methodInfo.GetCustomAttribute(typeof(NotificationNameAttribute)) as NotificationNameAttribute;
+                var notificationNameAttribute = methodInfo.GetCustomAttribute<NotificationNameAttribute>();
                 if (notificationNameAttribute != null)
                 {
                     Enlist(notificationNameAttribute.Name, target, methodInfo);
@@ -117,14 +117,18 @@ namespace Microsoft.Framework.Notify
                     var objectPropertyInfo = objectTypeInfo.GetDeclaredProperty(methodParameterInfos[index].Name);
                     if (objectPropertyInfo == null)
                     {
+#if NET45 || DNX451 || DNXCORE50
                         Console.WriteLine("objectPropertyInfo == null");
+#endif
                         continue;
                     }
 
                     var objectPropertyValue = objectPropertyInfo.GetValue(parameters);
                     if (objectPropertyValue == null)
                     {
+#if NET45 || DNX451 || DNXCORE50
                         Console.WriteLine("objectPropertyInfo == null");
+#endif
                         continue;
                     }
 

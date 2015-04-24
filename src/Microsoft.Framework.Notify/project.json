@@ -3,7 +3,7 @@
     "description": "Logging infrastructure.",
     "dependencies": {
         "Microsoft.Framework.DependencyInjection.Interfaces": "1.0.0-*",
-        "Microsoft.Framework.Logging.Interfaces": "1.0.0-*"
+        "System.Runtime": "4.0.20-beta-*"
     },
     "compilationOptions": {
         "define": [
@@ -27,11 +27,14 @@
             "dependencies": {
                 "System.Collections.Concurrent": "4.0.10-beta-*",
                 "System.Collections": "4.0.10-beta-*",
+                "System.Console": "4.0.0-beta-*",
                 "System.Diagnostics.TraceSource": "4.0.0-beta-*",
                 "System.Globalization": "4.0.10-beta-*",
                 "System.Linq": "4.0.0-beta-*",
                 "System.Threading": "4.0.10-beta-*",
-                "System.Reflection.Emit": "4.0.0-beta-*"
+                "System.Reflection.Emit": "4.0.0-beta-*",
+                "System.Reflection.Extensions": "4.0.0-beta-*",
+                "System.Runtime.Extensions": "4.0.10-beta-*"
             }
         },
         ".NETPortable,Version=v4.6,Profile=Profile151": {
@@ -39,6 +42,7 @@
                 "System.Collections": "",
                 "System.Collections.Concurrent": "",
                 "System.Reflection": "",
+                "System.Reflection.Extensions": "",
                 "System.Runtime.Extensions": "",
                 "System.Linq": "",
                 "System.Threading": ""
